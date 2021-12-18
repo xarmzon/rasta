@@ -1,4 +1,4 @@
-# My Portfolio site using Next.js + Tailwind CSS
+# My Portfolio Site using Next.js + Tailwind CSS + Typescript
 
 Rasta(Adelola Kayode Samson)
 
