@@ -28,6 +28,7 @@ module.exports = {
         "primary-100": colors.emerald["100"],
         "primary-400": colors.emerald["400"],
         ascent: "#e01e49",
+        "ascent-light": "#ed5f84",
         body: "#1f2937",
       },
     },

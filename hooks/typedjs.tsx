@@ -15,7 +15,7 @@ const useTypedJS = (
       smartBackspace: true,
       loop: true,
       showCursor: true,
-      cursorChar: " 🖲️",
+      cursorChar: " 💻",
     });
     return () => {
       typed.destroy();
