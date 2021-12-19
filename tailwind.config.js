@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: "1rem",
       screens: {
         sm: "100%",
         md: "100%",
@@ -18,6 +19,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         computer1: `url('/images/computer1.png')`,
+        computer2: `url('/images/computer2.png')`,
       },
       fontFamily: {
         brand: ["Nunito", "san-serif"],
