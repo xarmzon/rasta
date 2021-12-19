@@ -15,7 +15,7 @@ const Navbar = ({ navOpen }: INavbar) => {
       } bg-gray-900 bg-blend-multiply bg-computer2 bg-cover bg-center transition-all duration-700`}
     >
       <div className="relative container pt-20 px-5 flex justify-center items-center gap-16 text-primary-100 h-full">
-        <div className="flex-1">
+        <div className="flex-1 border-b-4 border-l-8 border-b-primary-400 border-l-ascent rounded-full border-t-4 border-t-primary-100 overflow-hidden">
           <Image
             src={`/images/rasta_2.jpg`}
             width="100%"
