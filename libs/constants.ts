@@ -12,4 +12,8 @@ export const navLinks: INavLink[] = [
     url: "/about",
     text: "About",
   },
+  {
+    url: "/portfolio",
+    text: "Portfolio",
+  },
 ];
