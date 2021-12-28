@@ -35,21 +35,41 @@ const AboutMe = () => {
       >
         <motion.div
           variants={box}
-          className="w-full  md:w-[80vh] border-2 border-x-primary-400 md:mx-auto p-5"
+          className="w-full  md:w-[60vw] border-2 border-x-primary-400 md:mx-auto p-3 pr-4 md:p-5"
         >
-          <h5 className="text-xl font-extralight">Hi, I am</h5>
-          <h3 className="text-3xl font-bold">
-            Adelola Kayode Samson (RastaXarm)
+          <h5 className="text-xs md:text-xl font-extralight">
+            Hi there👋, I am
+          </h5>
+          <h3 className="md:text-3xl text-lg font-bold">
+            Kayode Samson Adelola - but I enjoyed being called RastaXarm.
           </h3>
-          <p className="mt-5 text-justify">
-            A motivated and self-learned full-stack developer with a great
-            passion for technology and software development. Likes to work with
-            Object-Oriented Programming languages, frameworks with a preference
-            to Python and JavaScript. A motivated and self-learned full-stack
-            developer with a great passion for technology and software
-            development. Likes to work with Object-Oriented Programming
-            languages, frameworks with a preference to Python and JavaScript.
-          </p>
+          <div className="text-xs sm:text-sm md:text-base">
+            <p className="mt-5 text-justify">
+              A professional and talented Full-Stack Web Developer from Nigeria.
+              A 400 level student of Better by Far University currently studying
+              Mathematics from the University of Ilorin, Ilorin Kwara State
+              Nigeria.
+            </p>
+            <p className="mt-5 text-justify">
+              I build/develop websites with HTML, CSS and JavaScript and I have
+              worked on the web for over 3 years with experience ranging from
+              VueJS, ReactJS, NextJs, TailwindCSS, TypeScript, CSS, MongoDB,
+              Flask(Python), ExpressJS(NodeJS), SQLAlchemy etc.
+            </p>
+            <p className="mt-5 text-justify">
+              Being a diligent, hardworking, and result-oriented lad, I always
+              strive hard towards achieving the best results on each
+              project/task I lay my hands on and I am passionate about
+              leveraging my diverse experience to solve challenging problems and
+              create delightful experiences.
+            </p>
+            <p className="mt-5 text-justify">
+              I strengthened my skills in Web Development, Graphics Designs, and
+              Teaching others by sharing and contributing to the IT community is
+              something I enjoy doing, and it has become an important aspect of
+              me and I enjoy sharing what I've learned.
+            </p>
+          </div>
         </motion.div>
         <NexPageLinkButton url="/portfolio" text="My Portfolio" />
       </motion.div>
