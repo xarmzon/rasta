@@ -31,7 +31,7 @@ const AboutMe = () => {
         initial="initial"
         animate="animate"
         variants={container}
-        className="pt-20 p-5 text-primary-100 flex justify-center items-center"
+        className="pt-20 p-5 text-primary-100 flex justify-center items-center bg-body"
       >
         <motion.div
           variants={box}
@@ -62,12 +62,12 @@ const AboutMe = () => {
               leveraging my diverse experience to solve challenging problems and
               create delightful experiences.
             </p>
-            <p className="mt-5 text-justify">
+            {/* <p className="mt-5 text-justify">
               I strengthened my skills in Web Development, Graphics Designs, and
               Teaching others by sharing and contributing to the IT community is
               something I enjoy doing, and it has become an important aspect of
               me and I enjoy sharing what I've learned.
-            </p>
+            </p> */}
           </div>
         </motion.div>
         <NexPageLinkButton url="/portfolio" text="My Portfolio" />
