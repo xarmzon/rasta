@@ -9,7 +9,7 @@ import { DEFAULT_TITLE, DESCRIPTION } from "../libs/constants";
 import { AnimatePresence, motion } from "framer-motion";
 import Contact from "../components/Contact";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   const [navOpen, setNavOpen] = useState<boolean>(false);
   const closeNav = () => navOpen && setNavOpen((prev) => false);
   return (
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           ]}
         />
         <AnimatePresence exitBeforeEnter>
-          <motion.div key="page">
+          <motion.div key={router.route}>
             <Component {...pageProps} />
             <Contact />
           </motion.div>
