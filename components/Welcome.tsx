@@ -52,7 +52,7 @@ const greeting: Variants = {
   exit: {
     opacity: 0,
     y: -100,
-    transition: { duration: 2, ease: "easeOut" },
+    transition: { duration: 1.3, ease: "easeOut" },
   },
 };
 const greeting2: Variants = {
@@ -68,7 +68,7 @@ const greeting2: Variants = {
   exit: {
     opacity: 0,
     y: 200,
-    transition: { duration: 2, ease: "easeOut" },
+    transition: { duration: 1.2, ease: "easeOut" },
   },
 };
 const greeting3: Variants = {
@@ -87,7 +87,7 @@ const greeting3: Variants = {
     opacity: 0,
     scale: 0,
     x: -100,
-    transition: { duration: 2, ease: "easeOut" },
+    transition: { duration: 1, ease: "easeOut" },
   },
 };
 
