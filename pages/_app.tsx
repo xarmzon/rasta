@@ -6,6 +6,8 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { DefaultSeo } from "next-seo";
 import { DEFAULT_TITLE, DESCRIPTION } from "../libs/constants";
+import { AnimatePresence, motion } from "framer-motion";
+import Contact from "../components/Contact";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [navOpen, setNavOpen] = useState<boolean>(false);
@@ -26,7 +28,12 @@ function MyApp({ Component, pageProps }: AppProps) {
             },
           ]}
         />
-        <Component {...pageProps} />
+        <AnimatePresence exitBeforeEnter>
+          <motion.div key="page">
+            <Component {...pageProps} />
+            <Contact />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </>
   );
