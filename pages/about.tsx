@@ -13,7 +13,7 @@ const container: Variants = {
 
 const box: Variants = {
   initial: {
-    x: 100,
+    x: -100,
     y: -100,
   },
   animate: {
