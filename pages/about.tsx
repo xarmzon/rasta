@@ -50,10 +50,10 @@ const AboutMe = () => {
               Far University, University of Ilorin, Ilorin Kwara State Nigeria.
             </p>
             <p className="mt-5 text-justify">
-              I build/develop websites with HTML, CSS and JavaScript and I have
-              worked on the web for over 3 years with experience ranging from
-              VueJS, ReactJS, NextJs, TailwindCSS, TypeScript, CSS, MongoDB,
-              Flask(Python), ExpressJS(NodeJS), SQLAlchemy etc.
+              I build and develop websites with HTML, CSS and JavaScript and I
+              have worked on the web for over 3 years with experience ranging
+              from VueJS, ReactJS, NextJs, TailwindCSS, TypeScript, CSS,
+              MongoDB, Flask(Python), ExpressJS(NodeJS), SQLAlchemy etc.
             </p>
             <p className="mt-5 text-justify">
               Being a diligent, hardworking, and result-oriented lad, I always
