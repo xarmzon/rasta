@@ -21,6 +21,12 @@ const box: Variants = {
     y: 0,
     transition: { duration: 1, ease: "easeIn" },
   },
+  exit: {
+    opacity: 0,
+    width: 0,
+    y: "100vh",
+    transition: { duration: 1, ease: "easeOut" },
+  },
 };
 
 const AboutMe = () => {
@@ -30,8 +36,9 @@ const AboutMe = () => {
       <motion.div
         initial="initial"
         animate="animate"
+        exit="exit"
         variants={container}
-        className="pt-20 p-5 text-primary-100 flex justify-center items-center bg-body"
+        className="overflow-hidden pt-20 p-5 text-primary-100 flex justify-center items-center"
       >
         <motion.div
           variants={box}

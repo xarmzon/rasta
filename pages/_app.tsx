@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <>
       <Header navOpen={navOpen} closeNav={closeNav} setNav={setNavOpen} />
       <Navbar navOpen={navOpen} closeNav={closeNav} />
-      <div className="h-screen w-full bg-computer1 bg-blend-multiply bg-cover bg-center bg-body">
+      <div className="h-screen w-full bg-computer1 bg-blend-multiply bg-cover bg-center bg-body overflow-hidden">
         <DefaultSeo
           titleTemplate={`%s | ${DEFAULT_TITLE}`}
           defaultTitle={`${DEFAULT_TITLE}`}
