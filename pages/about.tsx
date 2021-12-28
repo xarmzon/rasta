@@ -46,9 +46,8 @@ const AboutMe = () => {
           <div className="text-xs sm:text-sm md:text-base">
             <p className="mt-5 text-justify">
               A professional and talented Full-Stack Web Developer from Nigeria.
-              A 400 level student of Better by Far University currently studying
-              Mathematics from the University of Ilorin, Ilorin Kwara State
-              Nigeria.
+              A 400 level student currently studying Mathematics from Better by
+              Far University, University of Ilorin, Ilorin Kwara State Nigeria.
             </p>
             <p className="mt-5 text-justify">
               I build/develop websites with HTML, CSS and JavaScript and I have
