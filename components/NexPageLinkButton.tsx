@@ -1,24 +1,13 @@
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import { slideUp } from "../libs/variants";
 import { INexPageLinkButton } from "../types";
-
-const slideUp: Variants = {
-  initial: {
-    opacity: 0,
-    y: 1000,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: { type: "spring", stiffness: 350 },
-  },
-};
 
 const NexPageLinkButton = ({ url, text }: INexPageLinkButton) => {
   return (
     <motion.div
-      variants={slideUp}
+      variants={slideUp(150)}
       initial="initial"
       animate="animate"
       className="absolute bottom-[5%] w-full text-center"

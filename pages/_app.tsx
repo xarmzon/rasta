@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           ]}
         />
         <AnimatePresence exitBeforeEnter>
-          <motion.div key={router.route}>
+          <motion.div key={router.route} className="overflow-hidden">
             <Component {...pageProps} />
             <Contact />
           </motion.div>

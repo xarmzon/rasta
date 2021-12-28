@@ -2,32 +2,7 @@ import { motion, Variants } from "framer-motion";
 import { NextSeo } from "next-seo";
 import React from "react";
 import NexPageLinkButton from "../components/NexPageLinkButton";
-
-const container: Variants = {
-  initial: {
-    opacity: 0,
-    transition: { staggerChildren: 0.3 },
-  },
-  animate: { opacity: 1, transition: { duration: 2, ease: "easeInOut" } },
-};
-
-const box: Variants = {
-  initial: {
-    x: -100,
-    y: -100,
-  },
-  animate: {
-    x: 0,
-    y: 0,
-    transition: { duration: 1, stiffness: 200, type: "spring" },
-  },
-  exit: {
-    opacity: 0,
-    width: 0,
-    y: "100vh",
-    transition: { duration: 1, ease: "easeOut" },
-  },
-};
+import { aboutContainer, box } from "../libs/variants";
 
 const AboutMe = () => {
   return (
@@ -37,7 +12,7 @@ const AboutMe = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        variants={container}
+        variants={aboutContainer}
         className="overflow-hidden pt-20 p-5 text-primary-100 flex justify-center items-center"
       >
         <motion.div

@@ -2,6 +2,13 @@ import { motion, Variant, Variants } from "framer-motion";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import useTypedJS from "../hooks/typedjs";
+import {
+  container,
+  greeting,
+  greeting2,
+  greeting3,
+  image,
+} from "../libs/variants";
 
 const texts = [
   "A FULL-STACK WEB DEV.",
@@ -9,88 +16,6 @@ const texts = [
   "A MATHEMATICIAN",
   "A GRAPHICS DESIGNER",
 ];
-
-//variants
-const container: Variants = {
-  initial: {
-    transition: {
-      staggerChildren: 0.35,
-      delayChildren: 0.1,
-    },
-  },
-  exit: { opacity: 0, transition: { duration: 1 } },
-};
-
-const image: Variants = {
-  initial: {
-    x: -100,
-    rotateZ: -50,
-    scale: 0,
-  },
-  animate: {
-    x: 0,
-    rotateZ: 0,
-    scale: 1,
-  },
-  exit: {
-    opacity: 0,
-    y: 100,
-    rotateZ: -50,
-    transition: { duration: 0.4 },
-  },
-};
-
-const greeting: Variants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeIn" },
-  },
-  exit: {
-    opacity: 0,
-    y: -100,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
-const greeting2: Variants = {
-  initial: {
-    opacity: 0,
-    x: 200,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 1.8, ease: "easeIn" },
-  },
-  exit: {
-    opacity: 0,
-    y: 200,
-    transition: { duration: 1, ease: "easeOut" },
-  },
-};
-const greeting3: Variants = {
-  initial: {
-    opacity: 0,
-    scale: 1.5,
-    y: 200,
-  },
-  animate: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { duration: 1.5, ease: "easeIn" },
-  },
-  exit: {
-    opacity: 0,
-    scale: 0,
-    x: -100,
-    transition: { duration: 1, ease: "easeOut" },
-  },
-};
 
 const Welcome = () => {
   const typedRef = useRef<HTMLSpanElement | null>(null);
