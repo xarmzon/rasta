@@ -6,12 +6,12 @@ import { INexPageLinkButton } from "../types";
 const slideUp: Variants = {
   initial: {
     opacity: 0,
-    y: 100,
+    y: 1000,
   },
   animate: {
     y: 0,
     opacity: 1,
-    transition: { duration: 1.5, ease: "easeIn" },
+    transition: { type: "spring", stiffness: 350 },
   },
 };
 

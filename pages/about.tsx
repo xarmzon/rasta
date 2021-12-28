@@ -19,7 +19,7 @@ const box: Variants = {
   animate: {
     x: 0,
     y: 0,
-    transition: { duration: 1, ease: "easeIn" },
+    transition: { duration: 1, stiffness: 200, type: "spring" },
   },
   exit: {
     opacity: 0,

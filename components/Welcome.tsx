@@ -18,7 +18,7 @@ const container: Variants = {
       delayChildren: 0.1,
     },
   },
-  exit: { opacity: 0, transition: { duration: 1.3 } },
+  exit: { opacity: 0, transition: { duration: 1 } },
 };
 
 const image: Variants = {
@@ -36,6 +36,7 @@ const image: Variants = {
     opacity: 0,
     y: 100,
     rotateZ: -50,
+    transition: { duration: 0.4 },
   },
 };
 
@@ -47,12 +48,12 @@ const greeting: Variants = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.6, ease: "easeIn" },
+    transition: { duration: 0.6, ease: "easeIn" },
   },
   exit: {
     opacity: 0,
     y: -100,
-    transition: { duration: 1.3, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 const greeting2: Variants = {
@@ -68,7 +69,7 @@ const greeting2: Variants = {
   exit: {
     opacity: 0,
     y: 200,
-    transition: { duration: 1.2, ease: "easeOut" },
+    transition: { duration: 1, ease: "easeOut" },
   },
 };
 const greeting3: Variants = {
