@@ -11,3 +11,7 @@
     @apply font-brand;
   }
 }
+
+#nprogress .bar {
+  @apply bg-primary-100;
+}
