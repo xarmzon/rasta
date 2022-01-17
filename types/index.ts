@@ -24,3 +24,17 @@ export interface ILinkIcon {
   url: string;
   icon: React.ReactElement;
 }
+
+export interface IBottomNavbarLinks {
+  icon: string;
+  name: string;
+  link?: string;
+}
+
+export interface INavIconImage {
+  icon: string;
+}
+
+export interface IPageHeading {
+  title: string;
+}

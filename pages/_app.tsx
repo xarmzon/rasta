@@ -11,6 +11,9 @@ import { useRouter } from "next/router";
 
 import "nprogress/nprogress.css";
 import "../styles/globals.css";
+import Sidebar from "../components/Sidebar";
+import MainContents from "../components/MainContents";
+import WindowsNavbar from "../components/WindowsNavbar";
 
 NProgress.configure({ showSpinner: false });
 
@@ -35,9 +38,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   const closeNav = () => navOpen && setNavOpen((prev) => false);
   return (
     <>
-      <Header navOpen={navOpen} closeNav={closeNav} setNav={setNavOpen} />
-      <Navbar navOpen={navOpen} closeNav={closeNav} />
-      <div className="h-screen w-full bg-computer1 bg-blend-multiply bg-cover bg-center bg-body overflow-hidden">
+      {/* <Header navOpen={navOpen} closeNav={closeNav} setNav={setNavOpen} /> */}
+      {/* <Navbar navOpen={navOpen} closeNav={closeNav} /> */}
+      <div className="h-screen w-full bg-windows11 bg-blend-multiply bg-cover bg-center bg-primary text-secondary overflow-hidden">
         <DefaultSeo
           titleTemplate={`%s | ${DEFAULT_TITLE}`}
           defaultTitle={`${DEFAULT_TITLE}`}
@@ -50,11 +53,18 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           ]}
         />
         <AnimatePresence exitBeforeEnter>
-          <motion.div key={router.route} className="overflow-hidden">
-            <Component {...pageProps} />
-            <Contact />
+          <motion.div
+            key={router.route}
+            className="overflow-hidden grid md:grid-cols-12 fixed top-8 left-4 right-4 bottom-12 md:inset-12 gap-x-7 max-w-4xl lg:mx-auto"
+          >
+            <Sidebar />
+            <MainContents>
+              <Component {...pageProps} />
+            </MainContents>
+            {/* <Contact /> */}
           </motion.div>
         </AnimatePresence>
+        <WindowsNavbar />
       </div>
     </>
   );

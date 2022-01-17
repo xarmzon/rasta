@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { navLinks } from "../libs/constants";
+import { navLinks, navbarLinks } from "../libs/constants";
 import { INavbar } from "../types";
 
 const Navbar = ({ navOpen, closeNav }: INavbar) => {
