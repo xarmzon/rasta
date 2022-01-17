@@ -20,12 +20,17 @@ module.exports = {
       backgroundImage: {
         computer1: `url('/images/computer1.png')`,
         computer2: `url('/images/computer2.png')`,
+        windows11: `url('/images/Microsoft-Windows-11-Wallpaper.svg')`,
+        grad1:
+          "linear-gradient(to top, rgba(211, 211, 211, 0.56), rgba(237, 237, 237, 0.25))",
+        grad2: "linear-gradient(rgba(4, 17, 61, 0.5), rgba(4, 17, 61, 0.85))",
       },
       fontFamily: {
         brand: ["Nunito", "san-serif"],
       },
       colors: {
-        primary: colors.emerald["700"],
+        primary: "#ECF6F7",
+        secondary: "#04113D",
         "primary-50": colors.emerald["50"],
         "primary-100": colors.emerald["100"],
         "primary-400": colors.emerald["400"],
@@ -35,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

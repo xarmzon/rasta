@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="overflow-hidden relative">
       <Welcome />
-      <NexPageLinkButton url="/about" text="About Me" />
+      {/* <NexPageLinkButton url="/about" text="About Me" /> */}
     </section>
   );
 }
